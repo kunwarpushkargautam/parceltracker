@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 10px rgba(202, 202, 202, 0.4);
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+  
+    list-style: none;
+  }
+  .navbar .companyName{
+      font-size: 1.3rem;
+      color: orange;
+      text-decoration: none;
+      letter-spacing: 2px;
+      padding: 4px;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border-bottom: 4px solid rgba(128, 128, 128, 0);
+  }
+  
+  .navbar .navs li a {
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+  }
+  .navbar .navs li:hover {
+    border-bottom: 4px solid orange;
+  }
+  .navbar .navs li:hover a {
+    color: orange;
+  }
+  
+  .container{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .container h1{
+      color: grey;
+      margin: 2rem auto;
+  }
+  .container .dataBox{
+      background-color: rgb(214, 214, 214);
+      display: flex;
+      flex-direction: column;
+      width:60%;
+      min-width: 17rem;
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius:10px ;
+      
+  }
+  .container .dataBox input{
+      margin: .5rem auto;
+      font-size: 1.2rem;
+      height: 2rem;
+      width: 70%;
+      color: orange;
+      min-width: 15rem;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      outline: none;
+  }
+  .container .dataBox input::placeholder{
+      color: rgb(240, 185, 84);
+      /* font-size: 1.1rem; */
+      
+  }
+
+#sendData{
+  margin:2rem  auto;
+  width: 60%;
+  height: 2rem;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3rem;
+
+}
+#sendData:hover{
+  
+  background-color: rgb(13, 119, 3);
+  
+
+}
+#successMsg{
+  /* background-color: rgb(0, 165, 0); */
+  color: green;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto;
+  width: 70%;
+  pointer-events: none;
+}
