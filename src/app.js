@@ -2,9 +2,10 @@ const express = require("express"),
   mongoose = require("mongoose");
 const path = require("path");
 const app = express();
+require("dotenv").config();
 require("./db/connect");
 const UserData = require("./model/schema");
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.use(express.static("public"));

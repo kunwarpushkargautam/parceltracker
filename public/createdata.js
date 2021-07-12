@@ -11,7 +11,7 @@ document.getElementById("sendData").addEventListener("click", (event) => {
   if(!name.value || !mobile.value || !city.value || !pincode.value || !state.value || !date.value || !trackNumber.value) {
     return;
   }else{
-  fetch("http://localhost:3000/createdata", {
+  fetch("https://parceltrackers.herokuapp.com/createdata", {
     method: "POST",
     body: JSON.stringify({
       name: name.value.toLowerCase(),

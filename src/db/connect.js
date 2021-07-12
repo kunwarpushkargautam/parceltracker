@@ -1,7 +1,7 @@
 const mongoose = require ("mongoose");
 const UserData = require("../model/schema");
 const Data=require("../../data");
-mongoose.connect("mongodb+srv://myselfmrkunwar:myselfmrkunwar@cluster0.hmcj0.mongodb.net/TrackingDB?retryWrites=true&w=majority",{
+mongoose.connect("process.env.DB_URL",{
     useNewUrlParser:true,
     useFindAndModify:false,
     useUnifiedTopology:true,

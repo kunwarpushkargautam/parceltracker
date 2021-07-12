@@ -1,6 +1,6 @@
 const getData=()=>{
     var searchinput=document.getElementById("input").value;
-    let fetchRes = fetch(`http://localhost:3000/UserData/${searchinput}`);
+    let fetchRes = fetch(`https://parceltrackers.herokuapp.com/UserData/${searchinput}`);
     fetchRes.then((response)=>response.json()).then((res)=>{
         console.log(res);
     let str="";
